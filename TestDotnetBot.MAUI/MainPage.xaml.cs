@@ -16,16 +16,14 @@ namespace TestDotnetBot.MAUI
             this.evergineView.Application = this.evergineApplication;
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void OnRotateLeftClicked(object sender, EventArgs e)
         {
-            count++;
+            this.evergineApplication.RotateLeft();
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private void OnRotateRightClicked(object sender, EventArgs e)
+        {
+            this.evergineApplication.RotateRight();
         }
     }
 }

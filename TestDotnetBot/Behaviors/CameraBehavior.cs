@@ -287,5 +287,17 @@ namespace TestDotnetBot.Behaviors
             this.theta = 0; // Reset rotation
             this.isRotating = false; // Stop dragging
         }
+
+        public void RotateLeft()
+        {
+            this.theta -= 0.1f; // Adjust sensitivity if needed
+            this.isDirty = true;
+        }
+
+        public void RotateRight()
+        {
+            this.theta += 0.1f; // Adjust sensitivity if needed
+            this.isDirty = true;
+        }
     }
 }

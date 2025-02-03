@@ -487,7 +487,7 @@ Items:
     Id: 26395ce4-6172-43e1-8df2-5c96280ca9f8
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
     Name: Center
-    Tag: null
+    Tag: rotation
     IsEnabled: true
     IsStatic: false
     Components:

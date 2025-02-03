@@ -34,12 +34,10 @@
                     SemanticProperties.HeadingLevel="Level2"
                     Text="Welcome to .NET Multi-platform App UI" />
 
-                <Button
-                    x:Name="CounterBtn"
-                    Clicked="OnCounterClicked"
-                    HorizontalOptions="Center"
-                    SemanticProperties.Hint="Counts the number of times you click"
-                    Text="Click me" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button Text="⬅ Left" Clicked="OnRotateLeftClicked"/>
+                    <Button Text="➡ Right" Clicked="OnRotateRightClicked"/>
+                </StackLayout>
 
             </VerticalStackLayout> 
         </ScrollView>
