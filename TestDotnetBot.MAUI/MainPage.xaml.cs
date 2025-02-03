@@ -11,6 +11,8 @@ namespace TestDotnetBot.MAUI
         {
             InitializeComponent();
             this.evergineApplication = new MyApplication();
+
+            // Links the Evergine application to the EvergineView defined in XAML
             this.evergineView.Application = this.evergineApplication;
         }
 

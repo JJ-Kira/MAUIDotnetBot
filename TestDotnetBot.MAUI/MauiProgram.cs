@@ -10,7 +10,7 @@ namespace TestDotnetBot.MAUI
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
-                .UseMauiEvergine()
+                .UseMauiEvergine() // Adds Evergine engine support for 3D rendering
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

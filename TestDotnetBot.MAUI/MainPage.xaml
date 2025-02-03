@@ -5,11 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:evergine="clr-namespace:TestDotnetBot.MAUI.Evergine">
     <Grid>
+        <!-- Defines a two-row grid layout -->
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        
+        <!-- EvergineView displays the 3D content rendered by the Evergine engine in the first row -->
         <evergine:EvergineView x:Name="evergineView" />
+
+        <!-- Scrollable container for the UI in the second row -->
         <ScrollView Grid.Row="1">
             <VerticalStackLayout
                 Padding="30,0"
@@ -36,7 +41,7 @@
                     SemanticProperties.Hint="Counts the number of times you click"
                     Text="Click me" />
 
-            </VerticalStackLayout>
+            </VerticalStackLayout> 
         </ScrollView>
     </Grid>
 </ContentPage>
